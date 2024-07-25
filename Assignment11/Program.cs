@@ -1,4 +1,6 @@
-﻿namespace Assignment11
+﻿using Assignment11.Classes;
+
+namespace Assignment11
 {
     internal class Program
     {
@@ -39,6 +41,15 @@
             }
             #endregion
 
+            #region Question 2
+            Range<int> intRange = new Range<int>(1, 15);
+            Console.WriteLine("Is 10 in range: " + intRange.IsInRange(10));
+            Console.WriteLine("Range length: " + intRange.Length());
+
+            Range<string> stringRange = new Range<string>("1", "19");
+            Console.WriteLine("Is 10 in range: " + stringRange.IsInRange("10"));
+            Console.WriteLine("Range length: " + stringRange.Length());
+            #endregion
 
         }
     }
